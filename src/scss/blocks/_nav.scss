@@ -1,0 +1,32 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 80px;
+  padding-right: 153px;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  gap: 64px;
+
+  a {
+    color: var(--link-nav-color);
+  }
+
+  a:hover,
+  a.active {
+    color: var(--accent);
+  }
+}
+
+.nav__btn {
+  width: 195px;
+  height: 64px;
+  /* Primary color */
+  border: 1px solid rgb(255, 206, 78);
+}
+.btn-connect {
+}
