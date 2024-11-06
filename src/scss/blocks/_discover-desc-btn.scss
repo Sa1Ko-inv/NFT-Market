@@ -1,0 +1,53 @@
+.discover__btn {
+  display: flex;
+
+  gap: 48px;
+
+  padding-bottom: 77px;
+}
+.btn-explore {
+  display: flex;
+
+  width: 257px;
+  height: 84px;
+
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--accent);
+
+  color: rgb(0, 0, 0);
+  font-family: WorkSans;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 36px;
+
+  transition: opacity 0.2s ease-in;
+}
+.btn-create {
+  display: flex;
+
+  width: 257px;
+  height: 84px;
+
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid rgb(255, 206, 78);
+  background: rgba(233, 215, 167, 0.1);
+
+  color: #fff;
+  font-family: WorkSans;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 36px;
+
+  transition: opacity 0.2s ease-in;
+}
+
+.btn-create:hover,
+.btn-create:focus,
+.btn-explore:hover,
+.btn-explore:focus {
+  opacity: 0.8;
+}

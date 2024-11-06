@@ -1,0 +1,49 @@
+.discover__cart {
+  // background: url(./../../img/discover-cart-bg.png);
+  position: absolute;
+  width: 556px;
+  height: 718px;
+
+  right: 153px;
+}
+
+.chocolate {
+  position: absolute;
+  z-index: 1;
+
+  top: 66px;
+  right: 61px;
+}
+.confety1 {
+  position: absolute;
+  z-index: 1;
+
+  top: 10px;
+  left: 10px;
+}
+.confety2 {
+  position: absolute;
+  z-index: 1;
+
+  top: 274px;
+  right: 7px;
+}
+.confety3 {
+  position: absolute;
+  z-index: 1;
+
+  left: 14px;
+  bottom: 26px;
+}
+.discover-cart-bg {
+  position: absolute;
+
+  width: 556px;
+  height: 718px;
+
+  background: radial-gradient(
+    101.79% 121.63% at 22% 23%,
+    rgba(224, 48, 84, 0.93),
+    rgba(224, 48, 84, 0) 100%
+  );
+}

@@ -1,0 +1,42 @@
+.discover__desc {
+}
+.discover-title {
+  width: 710px;
+  padding-bottom: 77px;
+
+  color: rgb(245, 251, 242);
+  font-family: Oxanium;
+  font-size: 82px;
+  font-weight: 700;
+  line-height: 130px;
+
+  span {
+    color: var(--accent);
+  }
+}
+
+.cunter {
+  display: flex;
+  gap: 103px;
+}
+.artWorks,
+.auctions,
+.creators {
+  color: rgb(245, 251, 242);
+  font-family: Oxanium;
+  font-size: 62px;
+  font-weight: 700;
+  line-height: 78px;
+
+  justify-items: center;
+
+  p {
+    padding-top: 1px;
+
+    color: rgb(155, 158, 154);
+    font-family: WorkSans;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 35.45px;
+  }
+}
