@@ -1,0 +1,29 @@
+.btn-connect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 195px;
+  height: 64px;
+
+  border: 1px solid rgb(255, 206, 78);
+  background: rgba(233, 215, 167, 0.1);
+
+  font-family: WorkSans;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21px;
+  text-align: left;
+  color: var(--accent);
+
+  transition: background-color 0.2s ease-in, color 0.2s ease-in;
+}
+
+.btn-connect:hover,
+.btn-connect:focus {
+  background-color: #404040;
+}
+
+.btn-connect:active {
+  background-color: #222222;
+}
