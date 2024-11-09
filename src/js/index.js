@@ -7,7 +7,7 @@ document.getElementById('toggleButton-btn').addEventListener('click', function()
 
     if (content.classList.contains('hidden')) {
         content.classList.remove('hidden');
-        discovered.style.paddingBottom = '265px'; // Добавляем отступ внизу
+        discovered.style.paddingBottom = '104px'; // Добавляем отступ внизу
         arrowIcon.style.transform = 'rotate(180deg)'; // Поворачиваем стрелку вверх
     } else {
         content.classList.add('hidden');
