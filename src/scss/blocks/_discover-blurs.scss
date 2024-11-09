@@ -1,0 +1,51 @@
+.discover-blurs {
+  position: relative;
+}
+
+.discover-blure-1 {
+  position: absolute;
+
+  width: 402px;
+  height: 208px;
+
+  filter: blur(195px);
+  background: rgba(231, 178, 38, 0.8);
+  left: -240px;
+  bottom: 110px;
+}
+.discover-blure-2 {
+  position: absolute;
+
+  width: 445.87px;
+  height: 247.58px;
+
+  filter: blur(195px);
+  background: rgba(96, 231, 206, 0.67);
+
+  right: 50px;
+  bottom: 100px;
+}
+.discover-blure-3 {
+  position: absolute;
+
+  width: 445px;
+  height: 227.09px;
+
+  filter: blur(195px);
+  background: rgb(213, 61, 92);
+
+  bottom: 400px;
+  right: -270px;
+}
+.discover-blure-4 {
+  position: absolute;
+
+  width: 445px;
+  height: 227.09px;
+
+  filter: blur(195px);
+  background: rgba(231, 178, 38, 0.83);
+
+  bottom: 20px;
+  right: -400px;
+}

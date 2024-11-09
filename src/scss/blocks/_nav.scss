@@ -4,13 +4,18 @@
   align-items: center;
   padding-left: 80px;
   padding-right: 153px;
+
+  z-index: 1;
 }
 
 .nav__list {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-content: center;
   gap: 64px;
+
+  z-index: 1;
 
   a {
     color: var(--link-nav-color);
@@ -32,4 +37,6 @@
 }
 
 .nav__btn {
+  position: relative;
+  z-index: 1;
 }

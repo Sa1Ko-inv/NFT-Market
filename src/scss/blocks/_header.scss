@@ -1,3 +1,27 @@
 .header {
   padding-top: 37px;
+  position: relative;
+}
+
+.header-bluer {
+  position: absolute;
+  width: 970px;
+  height: 1063px;
+
+  backdrop-filter: blur(30px);
+  background: rgba(79, 70, 78, 0.45);
+  top: 0;
+  right: 0;
+}
+
+.header-bluer-light {
+  position: absolute;
+
+  width: 334px;
+  height: 188px;
+  right: 0;
+  top: -100px;
+
+  filter: blur(195px);
+  background: rgba(96, 231, 206, 0.5);
 }

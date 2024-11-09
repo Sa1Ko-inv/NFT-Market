@@ -11,11 +11,14 @@
 
 <body>
 	@@include('blocks/header.html')
-	<main>
-		@@include('blocks/discover.html')
+	@@include('blocks/discover.html')
+	<main id="content" class="hidden" style="display: block;">
+		ghbtn
 	</main>
 	@@include('blocks/footer.html')
 	<script src="./js/index.bundle.js"></script>
 </body>
 
 </html>
+
+<!-- Убрать padding-bottom в discover, убрать style="display: block в main -->
