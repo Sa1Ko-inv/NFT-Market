@@ -1,0 +1,151 @@
+.card {
+  width: 495px;
+  height: 691px;
+  background-color: rgb(61, 41, 66);
+}
+.cart__img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 28px;
+
+  img {
+    width: 431px;
+    height: 359px;
+    margin-top: 32px;
+  }
+}
+.cart__countdown {
+  position: absolute;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  bottom: 0;
+  left: 32px;
+
+  width: 194px;
+  height: 66px;
+
+  font-family: WorkSans;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 35.45px;
+  letter-spacing: 2%;
+
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(45px);
+  background: linear-gradient(
+    177.22deg,
+    rgb(134, 19, 165) -29.582%,
+    rgba(250, 250, 250, 0.65) 163.704%
+  );
+  opacity: 0.95;
+}
+.cart-title__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+
+  padding: 0 32px;
+  margin-bottom: 28px;
+}
+
+.cart-creater {
+  display: flex;
+  align-items: center;
+
+  gap: 16px;
+}
+
+.cart-creater-img {
+}
+
+.cart-creater-name {
+  font-family: WorkSans;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 35.45px;
+  letter-spacing: 0%;
+
+  p {
+    color: rgb(189, 170, 193);
+    font-family: WorkSans;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 35.45px;
+    letter-spacing: 0%;
+  }
+}
+
+.cart__rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  color: rgb(118, 96, 122);
+  font-family: Work Sans;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 35.45px;
+
+  &::before {
+    content: "";
+    display: block;
+
+    // position: absolute;
+    // left: 0px;
+    // top: 0px;
+    width: 28px;
+    height: 26px;
+
+    background-image: url("./../../img/svgicons/cart-reting.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.cart__price {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 32px;
+  margin-bottom: 40px;
+
+  color: rgb(198, 191, 200);
+  font-family: WorkSans;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 35.45px;
+
+  span {
+    color: rgb(245, 251, 242);
+    font-family: Oxanium;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 35.45px;
+  }
+}
+
+.cart-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart__btn {
+  width: 431px;
+  height: 78px;
+
+  color: rgb(255, 255, 255);
+  font-family: WorkSans;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 35.45px;
+  letter-spacing: 5%;
+
+  box-sizing: border-box;
+  border: 1px solid rgb(253, 232, 179);
+  background: rgba(233, 215, 167, 0.1);
+}

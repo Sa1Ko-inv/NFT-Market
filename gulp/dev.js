@@ -13,12 +13,14 @@ const babel = require('gulp-babel');
 const imagemin = require('gulp-imagemin');
 const changed = require('gulp-changed');
 const typograf = require('gulp-typograf');
-const svgsprite = require('gulp-svg-sprite');
+
 const replace = require('gulp-replace');
 const webpHTML = require('gulp-webp-retina-html');
 const imageminWebp = require('imagemin-webp');
 const rename = require('gulp-rename');
 const prettier = require('@bdchauvette/gulp-prettier');
+const merge = require('merge-stream');
+
 
 
 gulp.task('clean:dev', function (done) {
@@ -111,82 +113,30 @@ gulp.task('sass:dev', function () {
 });
 
 gulp.task('images:dev', function () {
-	return (
-		gulp
-			.src(['./src/img/**/*', '!./src/img/svgicons/**/*'])
-			.pipe(changed('./build/img/'))
-			.pipe(
-				imagemin([
-					imageminWebp({
-						quality: 85,
-					}),
-				])
-			)
-			.pipe(rename({ extname: '.webp' }))
-			.pipe(gulp.dest('./build/img/'))
-			.pipe(gulp.src(['./src/img/**/*', '!./src/img/svgicons/**/*']))
-			.pipe(changed('./build/img/'))
-			// .pipe(imagemin({ verbose: true }))
-			.pipe(gulp.dest('./build/img/'))
-	);
-});
+	// Копирование и обработка изображений, кроме SVG-иконок
+	const imagesStream = gulp
+		.src(['./src/img/**/*', '!./src/img/svgicons/**/*'])
+		.pipe(changed('./build/img/'))
+		.pipe(
+			imagemin([
+				imageminWebp({
+					quality: 85,
+				}),
+			])
+		)
+		.pipe(rename({ extname: '.webp' }))
+		.pipe(gulp.dest('./build/img/'))
+		.pipe(gulp.src(['./src/img/**/*', '!./src/img/svgicons/**/*']))
+		.pipe(changed('./build/img/'))
+		// .pipe(imagemin({ verbose: true }))
+		.pipe(gulp.dest('./build/img/'));
 
-const svgStack = {
-	mode: {
-		stack: {
-			example: true,
-		},
-	},
-	shape: {
-		transform: [
-			{
-				svgo: {
-					js2svg: { indent: 4, pretty: true },
-				},
-			},
-		],
-	},
-};
-
-const svgSymbol = {
-	mode: {
-		symbol: {
-			sprite: '../sprite.symbol.svg',
-		},
-	},
-	shape: {
-		transform: [
-			{
-				svgo: {
-					js2svg: { indent: 4, pretty: true },
-					plugins: [
-						{
-							name: 'removeAttrs',
-							params: {
-								attrs: '(fill|stroke)',
-							},
-						},
-					],
-				},
-			},
-		],
-	},
-};
-
-gulp.task('svgStack:dev', function () {
-	return gulp
+	// Копирование SVG-файлов без изменений
+	const svgStream = gulp
 		.src('./src/img/svgicons/**/*.svg')
-		.pipe(plumber(plumberNotify('SVG:dev')))
-		.pipe(svgsprite(svgStack))
-		.pipe(gulp.dest('./build/img/svgsprite/'))
-});
+		.pipe(gulp.dest('./build/img/svgicons/'));
 
-gulp.task('svgSymbol:dev', function () {
-	return gulp
-		.src('./src/img/svgicons/**/*.svg')
-		.pipe(plumber(plumberNotify('SVG:dev')))
-		.pipe(svgsprite(svgSymbol))
-		.pipe(gulp.dest('./build/img/svgsprite/'));
+	return merge(imagesStream, svgStream); // Объединяем оба потока
 });
 
 gulp.task('files:dev', function () {
@@ -224,8 +174,5 @@ gulp.task('watch:dev', function () {
 	gulp.watch('./src/img/**/*', gulp.parallel('images:dev'));
 	gulp.watch('./src/files/**/*', gulp.parallel('files:dev'));
 	gulp.watch('./src/js/**/*.js', gulp.parallel('js:dev'));
-	gulp.watch(
-		'./src/img/svgicons/*',
-		gulp.series('svgStack:dev', 'svgSymbol:dev')
-	);
+
 });
