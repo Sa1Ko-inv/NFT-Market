@@ -1,9 +1,9 @@
-.card {
+.live-auction-card {
   width: 495px;
   height: 691px;
   background-color: rgb(61, 41, 66);
 }
-.cart__img {
+.live-auction-cart__img {
   position: relative;
   display: flex;
   justify-content: center;
@@ -16,7 +16,7 @@
     margin-top: 32px;
   }
 }
-.cart__countdown {
+.live-auction-cart__countdown {
   position: absolute;
 
   display: flex;
@@ -44,7 +44,7 @@
   );
   opacity: 0.95;
 }
-.cart-title__wrapper {
+.live-auction-cart-title__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -54,17 +54,17 @@
   margin-bottom: 28px;
 }
 
-.cart-creater {
+.live-auction-cart-creater {
   display: flex;
   align-items: center;
 
   gap: 16px;
 }
 
-.cart-creater-img {
+.live-auction-cart-creater-img {
 }
 
-.cart-creater-name {
+.live-auction-cart-creater-name {
   font-family: WorkSans;
   font-size: 28px;
   font-weight: 500;
@@ -81,7 +81,7 @@
   }
 }
 
-.cart__rating {
+.live-auction-cart__rating {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -107,7 +107,7 @@
   }
 }
 
-.cart__price {
+.live-auction-cart__price {
   display: flex;
   justify-content: space-between;
   padding: 0 32px;
@@ -128,13 +128,13 @@
   }
 }
 
-.cart-btn {
+.live-auction-cart-btn {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.cart__btn {
+.live-auction-cart__btn {
   width: 431px;
   height: 78px;
 

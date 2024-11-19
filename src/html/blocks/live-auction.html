@@ -5,15 +5,15 @@
             <div class="title">
                 <h2>Live Auction</h2>
 
-                <div class="title-circle">
+                <div class="live-auction-title-circle">
                     <img src="./../../img/svgicons/live-auction-circle.svg" alt="">
                 </div>
                 <div class="live-auction-title-blur"></div>
             </div>
 
             <div class="live-auction-controls">
-                <button class="live-auction-prev"><img src="./../../img/svgicons/live-auction-prev.svg" alt=""></button>
-                <button class="live-auction-next"><img src="./../../img/svgicons/live-auction-next.svg" alt=""></button>
+                <button id="live-auction-prev"><img src="./../../img/svgicons/live-auction-prev.svg" alt=""></button>
+                <button id="live-auction-next"><img src="./../../img/svgicons/live-auction-next.svg" alt=""></button>
             </div>
         </div>
         <!-- Content Top -->
@@ -21,45 +21,7 @@
         <!-- Cart -->
         <div class="container-right">
             <div class="live-auction__content">
-
-                <div class="card">
-
-                    <div class="cart__img">
-                        <img src="./../../img/cart-purple-face.png" alt="Purple-face">
-                        <div class="cart__countdown">
-                            03:18:24
-                        </div>
-                    </div>
-
-
-                    <div class="cart-title__wrapper">
-                        <div class="cart-creater">
-                            <div class="cart-creater-img">
-                                <img src="./../../img/svgicons/Profile cart.svg" alt="">
-                            </div>
-
-                            <div class="cart-creater-name">
-                                <h2>Virtual Art</h2>
-                                <p>by @wzard</p>
-                            </div>
-                        </div>
-
-                        <div class="cart__rating">
-                            92
-                        </div>
-                    </div>
-
-
-                    <div class="cart__price">
-                        <p>Current Bid</p>
-                        <span>4.89 ETH</span>
-                    </div>
-
-
-                    <div class="cart-btn">
-                        <button class="cart__btn">Place a bid</button>
-                    </div>
-                </div>
+                @@include('./elements/live-auction-swiper.html')
             </div>
         </div>
         <!-- Cart -->

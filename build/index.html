@@ -155,15 +155,15 @@
 						<div class="title">
 							<h2>Live Auction</h2>
 
-							<div class="title-circle">
+							<div class="live-auction-title-circle">
 								<img src="./img/svgicons/live-auction-circle.svg" alt="" />
 							</div>
 							<div class="live-auction-title-blur"></div>
 						</div>
 
 						<div class="live-auction-controls">
-							<button class="live-auction-prev"><img src="./img/svgicons/live-auction-prev.svg" alt="" /></button>
-							<button class="live-auction-next"><img src="./img/svgicons/live-auction-next.svg" alt="" /></button>
+							<button id="live-auction-prev"><img src="./img/svgicons/live-auction-prev.svg" alt="" /></button>
+							<button id="live-auction-next"><img src="./img/svgicons/live-auction-next.svg" alt="" /></button>
 						</div>
 					</div>
 					<!-- Content Top -->
@@ -171,42 +171,248 @@
 					<!-- Cart -->
 					<div class="container-right">
 						<div class="live-auction__content">
-							<div class="card">
-								<div class="cart__img">
-									<picture>
-										<source srcset="./img/cart-purple-face.webp 1x, ./img/cart-purple-face@2x.webp 2x" type="image/webp" />
-										<source srcset="./img/cart-purple-face.png 1x, ./img/cart-purple-face@2x.png 2x" type="image/png" />
-										<img src="./img/cart-purple-face.png" alt="Purple-face" />
-									</picture>
-									<div class="cart__countdown">
-										03:18:24
-									</div>
-								</div>
+							<div class="live-auction-swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="live-auction-card">
+											<div class="live-auction-cart__img">
+												<picture>
+													<source srcset="./img/live-auction-cart-purple-face.webp 1x, ./img/live-auction-cart-purple-face@2x.webp 2x" type="image/webp" />
+													<source srcset="./img/live-auction-cart-purple-face.png 1x, ./img/live-auction-cart-purple-face@2x.png 2x" type="image/png" />
+													<img src="./img/live-auction-cart-purple-face.png" alt="Purple-face" />
+												</picture>
+												<div class="live-auction-cart__countdown">
+													03:18:24
+												</div>
+											</div>
 
-								<div class="cart-title__wrapper">
-									<div class="cart-creater">
-										<div class="cart-creater-img">
-											<img src="./img/svgicons/Profile cart.svg" alt="" />
+											<div class="live-auction-cart-title__wrapper">
+												<div class="live-auction-cart-creater">
+													<div class="live-auction-cart-creater-img">
+														<img src="./img/svgicons/Profile cart.svg" alt="" />
+													</div>
+
+													<div class="live-auction-cart-creater-name">
+														<h2>Virtual Art</h2>
+														<p>by&#160;@wzard</p>
+													</div>
+												</div>
+
+												<div class="live-auction-cart__rating">
+													92
+												</div>
+											</div>
+
+											<div class="live-auction-cart__price">
+												<p>Current Bid</p>
+												<span>4.89 ETH</span>
+											</div>
+
+											<div class="live-auction-cart-btn">
+												<button class="live-auction-cart__btn">Place a&#160;bid</button>
+											</div>
 										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="live-auction-card">
+											<div class="live-auction-cart__img">
+												<picture>
+													<source srcset="./img/live-auction-cart-dont-face.webp 1x, ./img/live-auction-cart-dont-face@2x.webp 2x" type="image/webp" />
+													<source srcset="./img/live-auction-cart-dont-face.png 1x, ./img/live-auction-cart-dont-face@2x.png 2x" type="image/png" />
+													<img src="./img/live-auction-cart-dont-face.png" alt="dont-face" />
+												</picture>
+												<div class="live-auction-cart__countdown">
+													03:18:24
+												</div>
+											</div>
 
-										<div class="cart-creater-name">
-											<h2>Virtual Art</h2>
-											<p>by&#160;@wzard</p>
+											<div class="live-auction-cart-title__wrapper">
+												<div class="live-auction-cart-creater">
+													<div class="live-auction-cart-creater-img">
+														<img src="./img/svgicons/Profile cart.svg" alt="" />
+													</div>
+
+													<div class="live-auction-cart-creater-name">
+														<h2>Virtual Art</h2>
+														<p>by&#160;@wzard</p>
+													</div>
+												</div>
+
+												<div class="live-auction-cart__rating">
+													92
+												</div>
+											</div>
+
+											<div class="live-auction-cart__price">
+												<p>Current Bid</p>
+												<span>4.89 ETH</span>
+											</div>
+
+											<div class="live-auction-cart-btn">
+												<button class="live-auction-cart__btn">Place a&#160;bid</button>
+											</div>
 										</div>
 									</div>
+									<div class="swiper-slide">
+										<div class="live-auction-card">
+											<div class="live-auction-cart__img">
+												<picture>
+													<source srcset="./img/live-auction-cart-blue-face.webp 1x, ./img/live-auction-cart-blue-face@2x.webp 2x" type="image/webp" />
+													<source srcset="./img/live-auction-cart-blue-face.png 1x, ./img/live-auction-cart-blue-face@2x.png 2x" type="image/png" />
+													<img src="./img/live-auction-cart-blue-face.png" alt="blue-face" />
+												</picture>
+												<div class="live-auction-cart__countdown">
+													03:18:24
+												</div>
+											</div>
 
-									<div class="cart__rating">
-										92
+											<div class="live-auction-cart-title__wrapper">
+												<div class="live-auction-cart-creater">
+													<div class="live-auction-cart-creater-img">
+														<img src="./img/svgicons/Profile cart.svg" alt="" />
+													</div>
+
+													<div class="live-auction-cart-creater-name">
+														<h2>Virtual Art</h2>
+														<p>by&#160;@wzard</p>
+													</div>
+												</div>
+
+												<div class="live-auction-cart__rating">
+													92
+												</div>
+											</div>
+
+											<div class="live-auction-cart__price">
+												<p>Current Bid</p>
+												<span>4.89 ETH</span>
+											</div>
+
+											<div class="live-auction-cart-btn">
+												<button class="live-auction-cart__btn">Place a&#160;bid</button>
+											</div>
+										</div>
 									</div>
-								</div>
+									<div class="swiper-slide">
+										<div class="live-auction-card">
+											<div class="live-auction-cart__img">
+												<picture>
+													<source srcset="./img/live-auction-cart-purple-face.webp 1x, ./img/live-auction-cart-purple-face@2x.webp 2x" type="image/webp" />
+													<source srcset="./img/live-auction-cart-purple-face.png 1x, ./img/live-auction-cart-purple-face@2x.png 2x" type="image/png" />
+													<img src="./img/live-auction-cart-purple-face.png" alt="Purple-face" />
+												</picture>
+												<div class="live-auction-cart__countdown">
+													03:18:24
+												</div>
+											</div>
 
-								<div class="cart__price">
-									<p>Current Bid</p>
-									<span>4.89 ETH</span>
-								</div>
+											<div class="live-auction-cart-title__wrapper">
+												<div class="live-auction-cart-creater">
+													<div class="live-auction-cart-creater-img">
+														<img src="./img/svgicons/Profile cart.svg" alt="" />
+													</div>
 
-								<div class="cart-btn">
-									<button class="cart__btn">Place a&#160;bid</button>
+													<div class="live-auction-cart-creater-name">
+														<h2>Virtual Art</h2>
+														<p>by&#160;@wzard</p>
+													</div>
+												</div>
+
+												<div class="live-auction-cart__rating">
+													92
+												</div>
+											</div>
+
+											<div class="live-auction-cart__price">
+												<p>Current Bid</p>
+												<span>4.89 ETH</span>
+											</div>
+
+											<div class="live-auction-cart-btn">
+												<button class="live-auction-cart__btn">Place a&#160;bid</button>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="live-auction-card">
+											<div class="live-auction-cart__img">
+												<picture>
+													<source srcset="./img/live-auction-cart-dont-face.webp 1x, ./img/live-auction-cart-dont-face@2x.webp 2x" type="image/webp" />
+													<source srcset="./img/live-auction-cart-dont-face.png 1x, ./img/live-auction-cart-dont-face@2x.png 2x" type="image/png" />
+													<img src="./img/live-auction-cart-dont-face.png" alt="dont-face" />
+												</picture>
+												<div class="live-auction-cart__countdown">
+													03:18:24
+												</div>
+											</div>
+
+											<div class="live-auction-cart-title__wrapper">
+												<div class="live-auction-cart-creater">
+													<div class="live-auction-cart-creater-img">
+														<img src="./img/svgicons/Profile cart.svg" alt="" />
+													</div>
+
+													<div class="live-auction-cart-creater-name">
+														<h2>Virtual Art</h2>
+														<p>by&#160;@wzard</p>
+													</div>
+												</div>
+
+												<div class="live-auction-cart__rating">
+													92
+												</div>
+											</div>
+
+											<div class="live-auction-cart__price">
+												<p>Current Bid</p>
+												<span>4.89 ETH</span>
+											</div>
+
+											<div class="live-auction-cart-btn">
+												<button class="live-auction-cart__btn">Place a&#160;bid</button>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="live-auction-card">
+											<div class="live-auction-cart__img">
+												<picture>
+													<source srcset="./img/live-auction-cart-blue-face.webp 1x, ./img/live-auction-cart-blue-face@2x.webp 2x" type="image/webp" />
+													<source srcset="./img/live-auction-cart-blue-face.png 1x, ./img/live-auction-cart-blue-face@2x.png 2x" type="image/png" />
+													<img src="./img/live-auction-cart-blue-face.png" alt="blue-face" />
+												</picture>
+												<div class="live-auction-cart__countdown">
+													03:18:24
+												</div>
+											</div>
+
+											<div class="live-auction-cart-title__wrapper">
+												<div class="live-auction-cart-creater">
+													<div class="live-auction-cart-creater-img">
+														<img src="./img/svgicons/Profile cart.svg" alt="" />
+													</div>
+
+													<div class="live-auction-cart-creater-name">
+														<h2>Virtual Art</h2>
+														<p>by&#160;@wzard</p>
+													</div>
+												</div>
+
+												<div class="live-auction-cart__rating">
+													92
+												</div>
+											</div>
+
+											<div class="live-auction-cart__price">
+												<p>Current Bid</p>
+												<span>4.89 ETH</span>
+											</div>
+
+											<div class="live-auction-cart-btn">
+												<button class="live-auction-cart__btn">Place a&#160;bid</button>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -216,6 +422,554 @@
 					<!-- live auction button -->
 					<div class="live-auction-btn">
 						<button class="live-auction__btn">
+							View All
+						</button>
+					</div>
+					<!-- live auction button -->
+				</div>
+			</section>
+			<div class="works">
+				<div class="container">
+					<div class="works__title">
+						<h1>How it&#160;works</h1>
+						<div class="works-title__blur"></div>
+					</div>
+
+					<div class="works__stages">
+						<div class="stage">
+							<div class="stage__icon"><img src="./img/svgicons/Wallet.svg" alt="" /></div>
+							<p class="stage__name">Set up&#160;your wallet</p>
+						</div>
+						<div class="stage">
+							<div class="stage__icon"><img src="./img/svgicons/Collection.svg" alt="" /></div>
+							<p class="stage__name">Create your collection</p>
+						</div>
+						<div class="stage">
+							<div class="stage__icon"><img src="./img/svgicons/NFT.svg" alt="" /></div>
+							<p class="stage__name">Add your NFTs</p>
+						</div>
+						<div class="stage">
+							<div class="stage__icon"><img src="./img/svgicons/Sale.svg" alt="" /></div>
+							<p class="stage__name">List them for sale</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section class="popular-collections">
+				<div class="container">
+					<!-- Content Top -->
+					<div class="popular-collections__top">
+						<div class="title">
+							<h2>Popular Collections</h2>
+
+							<div class="popular-collections-title-circle">
+								<img src="./img/svgicons/popular-cillection-circle.svg" alt="" />
+							</div>
+							<div class="popular-collections-title-blur"></div>
+						</div>
+					</div>
+					<!-- Content Top -->
+
+					<!-- Cart -->
+					<div class="container-right">
+						<div class="popular-collections__content">
+							<div class="popular-collections-swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="popular-collections-card">
+											<div class="popular-collections-cart__img">
+												<picture>
+													<source srcset="./img/popular-collections-dont-face.webp 1x, ./img/popular-collections-dont-face@2x.webp 2x" type="image/webp" />
+													<source srcset="./img/popular-collections-dont-face.png 1x, ./img/popular-collections-dont-face@2x.png 2x" type="image/png" />
+													<img src="./img/popular-collections-dont-face.png" alt="dont-face" />
+												</picture>
+											</div>
+
+											<div class="popular-collections-cart-title__wrapper">
+												<div class="popular-collections-cart-creater">
+													<div class="popular-collections-cart-creater-img">
+														<img src="./img/svgicons/Profile cart2.svg" alt="" />
+													</div>
+
+													<div class="popular-collections-cart-creater-name">
+														<p>@wzard</p>
+													</div>
+												</div>
+
+												<div class="popular-collections-cart__rating">
+													ERC-721
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="popular-collections-card">
+											<div class="popular-collections-cart__img">
+												<picture>
+													<source
+														srcset="./img/popular-collections-purple-face.webp 1x, ./img/popular-collections-purple-face@2x.webp 2x"
+														type="image/webp"
+													/>
+													<source srcset="./img/popular-collections-purple-face.png 1x, ./img/popular-collections-purple-face@2x.png 2x" type="image/png" />
+													<img src="./img/popular-collections-purple-face.png" alt="dont-face" />
+												</picture>
+											</div>
+
+											<div class="popular-collections-cart-title__wrapper">
+												<div class="popular-collections-cart-creater">
+													<div class="popular-collections-cart-creater-img">
+														<img src="./img/svgicons/Profile cart2.svg" alt="" />
+													</div>
+
+													<div class="popular-collections-cart-creater-name">
+														<p>@wzard</p>
+													</div>
+												</div>
+
+												<div class="popular-collections-cart__rating">
+													ERC-721
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="popular-collections-card">
+											<div class="popular-collections-cart__img">
+												<picture>
+													<source srcset="./img/popular-collections-dont-face.webp 1x, ./img/popular-collections-dont-face@2x.webp 2x" type="image/webp" />
+													<source srcset="./img/popular-collections-dont-face.png 1x, ./img/popular-collections-dont-face@2x.png 2x" type="image/png" />
+													<img src="./img/popular-collections-dont-face.png" alt="dont-face" />
+												</picture>
+											</div>
+
+											<div class="popular-collections-cart-title__wrapper">
+												<div class="popular-collections-cart-creater">
+													<div class="popular-collections-cart-creater-img">
+														<img src="./img/svgicons/Profile cart2.svg" alt="" />
+													</div>
+
+													<div class="popular-collections-cart-creater-name">
+														<p>@wzard</p>
+													</div>
+												</div>
+
+												<div class="popular-collections-cart__rating">
+													ERC-721
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="popular-collections-card">
+											<div class="popular-collections-cart__img">
+												<picture>
+													<source
+														srcset="./img/popular-collections-purple-face.webp 1x, ./img/popular-collections-purple-face@2x.webp 2x"
+														type="image/webp"
+													/>
+													<source srcset="./img/popular-collections-purple-face.png 1x, ./img/popular-collections-purple-face@2x.png 2x" type="image/png" />
+													<img src="./img/popular-collections-purple-face.png" alt="dont-face" />
+												</picture>
+											</div>
+
+											<div class="popular-collections-cart-title__wrapper">
+												<div class="popular-collections-cart-creater">
+													<div class="popular-collections-cart-creater-img">
+														<img src="./img/svgicons/Profile cart2.svg" alt="" />
+													</div>
+
+													<div class="popular-collections-cart-creater-name">
+														<p>@wzard</p>
+													</div>
+												</div>
+
+												<div class="popular-collections-cart__rating">
+													ERC-721
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="popular-collections-card">
+											<div class="popular-collections-cart__img">
+												<picture>
+													<source srcset="./img/popular-collections-dont-face.webp 1x, ./img/popular-collections-dont-face@2x.webp 2x" type="image/webp" />
+													<source srcset="./img/popular-collections-dont-face.png 1x, ./img/popular-collections-dont-face@2x.png 2x" type="image/png" />
+													<img src="./img/popular-collections-dont-face.png" alt="dont-face" />
+												</picture>
+											</div>
+
+											<div class="popular-collections-cart-title__wrapper">
+												<div class="popular-collections-cart-creater">
+													<div class="popular-collections-cart-creater-img">
+														<img src="./img/svgicons/Profile cart2.svg" alt="" />
+													</div>
+
+													<div class="popular-collections-cart-creater-name">
+														<p>@wzard</p>
+													</div>
+												</div>
+
+												<div class="popular-collections-cart__rating">
+													ERC-721
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="popular-collections-card">
+											<div class="popular-collections-cart__img">
+												<picture>
+													<source
+														srcset="./img/popular-collections-purple-face.webp 1x, ./img/popular-collections-purple-face@2x.webp 2x"
+														type="image/webp"
+													/>
+													<source srcset="./img/popular-collections-purple-face.png 1x, ./img/popular-collections-purple-face@2x.png 2x" type="image/png" />
+													<img src="./img/popular-collections-purple-face.png" alt="dont-face" />
+												</picture>
+											</div>
+
+											<div class="popular-collections-cart-title__wrapper">
+												<div class="popular-collections-cart-creater">
+													<div class="popular-collections-cart-creater-img">
+														<img src="./img/svgicons/Profile cart2.svg" alt="" />
+													</div>
+
+													<div class="popular-collections-cart-creater-name">
+														<p>@wzard</p>
+													</div>
+												</div>
+
+												<div class="popular-collections-cart__rating">
+													ERC-721
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="popular-collections-controls">
+									<div class="popular-collections-button-prev"></div>
+									<div class="popular-collections-button-next"><img src="./img/svgicons/live-auction-next.svg" alt="" /></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Cart -->
+
+					<!-- live auction button -->
+					<div class="popular-collections-btn">
+						<button class="popular-collections__btn">
+							View All
+						</button>
+					</div>
+					<!-- live auction button -->
+				</div>
+			</section>
+			<section class="explore-by-categories">
+				<div class="container">
+					<!-- Content Top -->
+					<div class="explore-by-categories__top">
+						<div class="title">
+							<h2>Explore By&#160;Categories</h2>
+
+							<div class="explore-by-categories-title-circle">
+								<img src="./img/svgicons/explore-by-categories-circle.svg" alt="" />
+							</div>
+							<div class="explore-by-categories-title-blur"></div>
+						</div>
+					</div>
+					<!-- Content Top -->
+
+					<!-- Cart -->
+					<div class="container-right">
+						<div class="explore-by-categories__content">
+							<div class="explore-by-categories-swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="explore-by-categories-card">
+											<div class="explore-by-categories-cart__img">
+												<picture>
+													<source
+														srcset="./img/explore-by-categories-cart-gavay-face.webp 1x, ./img/explore-by-categories-cart-gavay-face@2x.webp 2x"
+														type="image/webp"
+													/>
+													<source
+														srcset="./img/explore-by-categories-cart-gavay-face.png 1x, ./img/explore-by-categories-cart-gavay-face@2x.png 2x"
+														type="image/png"
+													/>
+													<img src="./img/explore-by-categories-cart-gavay-face.png" alt="gavay-face" />
+												</picture>
+												<div class="explore-by-categories-cart-place">
+													<button class="explore-by-categories-cart__place">Place a&#160;Bid</button>
+												</div>
+											</div>
+
+											<div class="explore-by-categories-cart-title__wrapper">
+												<div class="explore-by-categories-cart-creater">
+													<div class="explore-by-categories-cart-creater-img">
+														<img src="./img/svgicons/Profile cart3.svg" alt="" />
+													</div>
+
+													<div class="explore-by-categories-cart-creater-name">
+														<h2>Virtual Art</h2>
+														<p>by&#160;@wzard</p>
+													</div>
+												</div>
+
+												<div class="explore-by-categories-cart__rating">
+													92
+												</div>
+											</div>
+
+											<div class="explore-by-categories-cart__price">
+												<p>Current Bid</p>
+												<span>4.89 ETH</span>
+											</div>
+
+											<div class="explore-by-categories-cart-btn">
+												<button class="explore-by-categories-cart__btn">Place a&#160;bid</button>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="explore-by-categories-card">
+											<div class="explore-by-categories-cart__img">
+												<picture>
+													<source
+														srcset="./img/explore-by-categories-cart-blue-face.webp 1x, ./img/explore-by-categories-cart-blue-face@2x.webp 2x"
+														type="image/webp"
+													/>
+													<source
+														srcset="./img/explore-by-categories-cart-blue-face.png 1x, ./img/explore-by-categories-cart-blue-face@2x.png 2x"
+														type="image/png"
+													/>
+													<img src="./img/explore-by-categories-cart-blue-face.png" alt="blue-face" />
+												</picture>
+												<div class="explore-by-categories-cart-place">
+													<button class="explore-by-categories-cart__place">Place a&#160;Bid</button>
+												</div>
+											</div>
+
+											<div class="explore-by-categories-cart-title__wrapper">
+												<div class="explore-by-categories-cart-creater">
+													<div class="explore-by-categories-cart-creater-img">
+														<img src="./img/svgicons/Profile cart3.svg" alt="" />
+													</div>
+
+													<div class="explore-by-categories-cart-creater-name">
+														<h2>Virtual Art</h2>
+														<p>by&#160;@wzard</p>
+													</div>
+												</div>
+
+												<div class="explore-by-categories-cart__rating">
+													92
+												</div>
+											</div>
+
+											<div class="explore-by-categories-cart__price">
+												<p>Current Bid</p>
+												<span>4.89 ETH</span>
+											</div>
+
+											<div class="explore-by-categories-cart-btn">
+												<button class="explore-by-categories-cart__btn">Place a&#160;bid</button>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="explore-by-categories-card">
+											<div class="explore-by-categories-cart__img">
+												<picture>
+													<source
+														srcset="./img/explore-by-categories-cart-purple-face.webp 1x, ./img/explore-by-categories-cart-purple-face@2x.webp 2x"
+														type="image/webp"
+													/>
+													<source
+														srcset="./img/explore-by-categories-cart-purple-face.png 1x, ./img/explore-by-categories-cart-purple-face@2x.png 2x"
+														type="image/png"
+													/>
+													<img src="./img/explore-by-categories-cart-purple-face.png" alt="purple-face" />
+												</picture>
+												<div class="explore-by-categories-cart-place">
+													<button class="explore-by-categories-cart__place">Place a&#160;Bid</button>
+												</div>
+											</div>
+
+											<div class="explore-by-categories-cart-title__wrapper">
+												<div class="explore-by-categories-cart-creater">
+													<div class="explore-by-categories-cart-creater-img">
+														<img src="./img/svgicons/Profile cart3.svg" alt="" />
+													</div>
+
+													<div class="explore-by-categories-cart-creater-name">
+														<h2>Virtual Art</h2>
+														<p>by&#160;@wzard</p>
+													</div>
+												</div>
+
+												<div class="explore-by-categories-cart__rating">
+													92
+												</div>
+											</div>
+
+											<div class="explore-by-categories-cart__price">
+												<p>Current Bid</p>
+												<span>4.89 ETH</span>
+											</div>
+
+											<div class="explore-by-categories-cart-btn">
+												<button class="explore-by-categories-cart__btn">Place a&#160;bid</button>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="explore-by-categories-card">
+											<div class="explore-by-categories-cart__img">
+												<picture>
+													<source
+														srcset="./img/explore-by-categories-cart-gavay-face.webp 1x, ./img/explore-by-categories-cart-gavay-face@2x.webp 2x"
+														type="image/webp"
+													/>
+													<source
+														srcset="./img/explore-by-categories-cart-gavay-face.png 1x, ./img/explore-by-categories-cart-gavay-face@2x.png 2x"
+														type="image/png"
+													/>
+													<img src="./img/explore-by-categories-cart-gavay-face.png" alt="gavay-face" />
+												</picture>
+												<div class="explore-by-categories-cart-place">
+													<button class="explore-by-categories-cart__place">Place a&#160;Bid</button>
+												</div>
+											</div>
+
+											<div class="explore-by-categories-cart-title__wrapper">
+												<div class="explore-by-categories-cart-creater">
+													<div class="explore-by-categories-cart-creater-img">
+														<img src="./img/svgicons/Profile cart3.svg" alt="" />
+													</div>
+
+													<div class="explore-by-categories-cart-creater-name">
+														<h2>Virtual Art</h2>
+														<p>by&#160;@wzard</p>
+													</div>
+												</div>
+
+												<div class="explore-by-categories-cart__rating">
+													92
+												</div>
+											</div>
+
+											<div class="explore-by-categories-cart__price">
+												<p>Current Bid</p>
+												<span>4.89 ETH</span>
+											</div>
+
+											<div class="explore-by-categories-cart-btn">
+												<button class="explore-by-categories-cart__btn">Place a&#160;bid</button>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="explore-by-categories-card">
+											<div class="explore-by-categories-cart__img">
+												<picture>
+													<source
+														srcset="./img/explore-by-categories-cart-blue-face.webp 1x, ./img/explore-by-categories-cart-blue-face@2x.webp 2x"
+														type="image/webp"
+													/>
+													<source
+														srcset="./img/explore-by-categories-cart-blue-face.png 1x, ./img/explore-by-categories-cart-blue-face@2x.png 2x"
+														type="image/png"
+													/>
+													<img src="./img/explore-by-categories-cart-blue-face.png" alt="blue-face" />
+												</picture>
+												<div class="explore-by-categories-cart-place">
+													<button class="explore-by-categories-cart__place">Place a&#160;Bid</button>
+												</div>
+											</div>
+
+											<div class="explore-by-categories-cart-title__wrapper">
+												<div class="explore-by-categories-cart-creater">
+													<div class="explore-by-categories-cart-creater-img">
+														<img src="./img/svgicons/Profile cart3.svg" alt="" />
+													</div>
+
+													<div class="explore-by-categories-cart-creater-name">
+														<h2>Virtual Art</h2>
+														<p>by&#160;@wzard</p>
+													</div>
+												</div>
+
+												<div class="explore-by-categories-cart__rating">
+													92
+												</div>
+											</div>
+
+											<div class="explore-by-categories-cart__price">
+												<p>Current Bid</p>
+												<span>4.89 ETH</span>
+											</div>
+
+											<div class="explore-by-categories-cart-btn">
+												<button class="explore-by-categories-cart__btn">Place a&#160;bid</button>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="explore-by-categories-card">
+											<div class="explore-by-categories-cart__img">
+												<picture>
+													<source
+														srcset="./img/explore-by-categories-cart-purple-face.webp 1x, ./img/explore-by-categories-cart-purple-face@2x.webp 2x"
+														type="image/webp"
+													/>
+													<source
+														srcset="./img/explore-by-categories-cart-purple-face.png 1x, ./img/explore-by-categories-cart-purple-face@2x.png 2x"
+														type="image/png"
+													/>
+													<img src="./img/explore-by-categories-cart-purple-face.png" alt="purple-face" />
+												</picture>
+												<div class="explore-by-categories-cart-place">
+													<button class="explore-by-categories-cart__place">Place a&#160;Bid</button>
+												</div>
+											</div>
+
+											<div class="explore-by-categories-cart-title__wrapper">
+												<div class="explore-by-categories-cart-creater">
+													<div class="explore-by-categories-cart-creater-img">
+														<img src="./img/svgicons/Profile cart3.svg" alt="" />
+													</div>
+
+													<div class="explore-by-categories-cart-creater-name">
+														<h2>Virtual Art</h2>
+														<p>by&#160;@wzard</p>
+													</div>
+												</div>
+
+												<div class="explore-by-categories-cart__rating">
+													92
+												</div>
+											</div>
+
+											<div class="explore-by-categories-cart__price">
+												<p>Current Bid</p>
+												<span>4.89 ETH</span>
+											</div>
+
+											<div class="explore-by-categories-cart-btn">
+												<button class="explore-by-categories-cart__btn">Place a&#160;bid</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Cart -->
+
+					<!-- live auction button -->
+					<div class="explore-by-categories-btn">
+						<button class="explore-by-categories__btn">
 							View All
 						</button>
 					</div>
