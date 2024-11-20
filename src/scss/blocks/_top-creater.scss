@@ -1,0 +1,133 @@
+.top-creater {
+  padding-bottom: 80px;
+}
+
+// Top content
+.top-creater__top {
+  margin-bottom: 80px;
+}
+.title {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 130px;
+
+  h2 {
+    padding-bottom: 42px;
+    color: rgb(245, 251, 242);
+    font-family: Oxanium;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 130px;
+
+    z-index: 1;
+  }
+}
+.top-creater-title-circle {
+  position: absolute;
+  top: 7px;
+  left: 740px;
+  width: 110px;
+  height: 110px;
+  align-items: center;
+}
+
+// Content
+.top-creater-content {
+  display: flex;
+  gap: 56px 72px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  padding-bottom: 80px;
+}
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  width: 608px;
+  height: 156px;
+
+  box-shadow: inset 2px 0px 0px 0px rgb(224, 48, 84);
+  background: rgb(48, 32, 52);
+}
+
+.creater-profile {
+  display: flex;
+  //   justify-content: center;
+  align-items: center;
+
+  gap: 24px;
+
+  img {
+    width: 104px;
+    height: 104px;
+  }
+}
+.profile-name-and-price {
+}
+.creater-profile-name {
+  font-family: Oxanium;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 35.45px;
+  letter-spacing: 5%;
+}
+.creater-price {
+  color: rgb(189, 170, 193);
+  font-family: WorkSans;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: 0%;
+}
+.profile-separator {
+}
+.creater-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding-right: 40px;
+
+  p {
+    color: rgb(144, 130, 148);
+    font-family: WorkSans;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0%;
+  }
+}
+.number-items {
+  font-family: Oxanium;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 35.45px;
+  letter-spacing: 5%;
+}
+
+// Button
+.top-creater-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-creater__btn {
+  width: 257px;
+  height: 84px;
+
+  color: rgb(245, 251, 242);
+  font-family: WorkSans;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 35.45px;
+  letter-spacing: 5%;
+
+  box-sizing: border-box;
+  border: 1px solid rgb(255, 206, 78);
+}
