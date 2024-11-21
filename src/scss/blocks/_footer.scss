@@ -1,0 +1,89 @@
+.footer {
+  padding: 115px 0;
+}
+
+.footer-content {
+  display: flex;
+  //   justify-content: space-between;
+  padding-left: 80px;
+}
+.footer-logo {
+  width: 194px;
+  height: 194px;
+  margin-right: 51px;
+}
+.footer-contacs {
+  display: grid;
+  gap: 60px;
+
+  width: 391px;
+
+  margin-right: 198px;
+
+  color: rgb(150, 131, 155);
+  font-family: WorkSans;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 36px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 29px;
+}
+// .footer-youtube {
+// }
+// .footer-twitter {
+// }
+// .footer-facebook {
+// }
+// .footer-google {
+// }
+.footer-about {
+  margin-right: 227px;
+}
+
+.footer-about__title {
+  margin-bottom: 18px;
+
+  color: rgb(245, 251, 242);
+  font-family: WorkSans;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 35.45px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.footer-about__link {
+  display: grid;
+  gap: 7px;
+
+  color: rgb(150, 131, 155);
+  font-family: WorkSans;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 50.5px;
+}
+
+// .footer-support {
+// }
+.footer-suppor__title {
+  margin-bottom: 18px;
+
+  color: rgb(245, 251, 242);
+  font-family: WorkSans;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 35.45px;
+}
+.footer-support__link {
+  display: grid;
+  gap: 7px;
+
+  color: rgb(150, 131, 155);
+  font-family: WorkSans;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 50.5px;
+}
